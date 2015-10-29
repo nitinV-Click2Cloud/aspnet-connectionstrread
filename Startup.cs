@@ -39,7 +39,7 @@ namespace UsingOptions
         }
         private async Task<IList<Product>> GetProductsAsync()
         {
-            var sqlCommandWrapper = new SqlCommandWrapper(connectionString, 1000);// connection string and timeout
+            var sqlCommandWrapper = new SqlCommandWrapper(connectionString, 900);// connection string and timeout
             var parameters = new SqlParameter[] { };
             return (await sqlCommandWrapper.ExecuteReaderAsync(CommandType.Text, // For stored-procedures no need to pass  CommandType param
                 "Select * From test1",
