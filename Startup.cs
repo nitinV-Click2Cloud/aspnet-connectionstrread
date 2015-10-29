@@ -31,9 +31,10 @@ namespace UsingOptions
         {
             app.Run(async (context) =>
             {
+                await context.Response.WriteAsync("<h1>Hello World!</h1><br/>Connection STring FOr This " + Configuration.Get("Data:DefaultConnection:ConnectionString"));
                 var products = await GetProductsAsync();
-                await context.Response.WriteAsync("Total Products: " + products.Count);
-                await context.Response.WriteAsync( "<br/>Hello World!Connection STring FOr This "+ Configuration.Get("Data:DefaultConnection:ConnectionString"));
+                await context.Response.WriteAsync("<br/>Total Products: " + products.Count);
+              
             });
         }
         private async Task<IList<Product>> GetProductsAsync()
