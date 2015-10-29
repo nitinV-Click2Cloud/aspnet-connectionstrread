@@ -31,7 +31,7 @@ namespace UsingOptions
         {
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("<h1>Hello World!</h1><br/>Connection STring FOr This " + Configuration.Get("Data:DefaultConnection:ConnectionString"));
+                await context.Response.WriteAsync("<h1>Hello World!</h1><br/>Connection String For This " + Configuration.Get("Data:DefaultConnection:ConnectionString"));
                 var products = await GetProductsAsync();
                 await context.Response.WriteAsync("<br/>Total Products: " + products.Count);
               
