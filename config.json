@@ -1,8 +1,7 @@
 ﻿{
 	"Data": {
 		"DefaultConnection": {
-     "ConnectionString": "Data Source=wsd014;Initial Catalog=ATUL;User ID=sa;Password=ROOT#123"
-     
+      "ConnectionString": "Data Source=192.168.0.150\\SQLEXPRESS;Initial Catalog=dnn4;User ID=sa;Password=Newuser@123"     
 		}
 	}
 }

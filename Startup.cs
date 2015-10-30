@@ -42,12 +42,12 @@ namespace UsingOptions
             var sqlCommandWrapper = new SqlCommandWrapper(connectionString, 900);// connection string and timeout
             var parameters = new SqlParameter[] { };
             return (await sqlCommandWrapper.ExecuteReaderAsync(CommandType.Text, // For stored-procedures no need to pass  CommandType param
-                "Select * From test1",
+                "Select * From items",
                 r =>
                 new Product
                 {
                     Id = (int)r["Id"],
-                   FirstName  = r["Name"].ToString(),
+                   FirstName  = r["FirstName"].ToString(),
                 }, parameters)).ToList();
         }
 
