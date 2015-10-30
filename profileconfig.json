@@ -1,1 +1,1 @@
-{"OpenshiftServer":"https://ose3m-dev.example.com:8443","ProjectName":"aspnet-connstr-2","BuildConfig":"aspnet-conn","ServiceRoute":"http://aspnet-conn-aspnet-connstr-2.cloudapps.example.com"}
+{"OpenshiftServer":"https://ose3m-dev.example.com:8443","ProjectName":"aspnet-proj","BuildConfig":"connstr","ServiceRoute":"http://connstr-aspnet-proj.cloudapps.example.com"}
