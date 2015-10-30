@@ -3,6 +3,24 @@
   "version": -9996,
   "targets": {
     "DNX,Version=v4.5.1": {
+      "Kestrel/1.0.0-beta5": {
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-beta5",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Kestrel.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Kestrel.dll": {}
+        }
+      },
       "Microsoft.AspNet.Authentication/1.0.0-beta5": {
         "dependencies": {
           "Microsoft.AspNet.DataProtection": "1.0.0-beta5",
@@ -584,6 +602,23 @@
           "Microsoft.AspNet.Loader.IIS": "1.0.0-beta5"
         }
       },
+      "Microsoft.AspNet.Server.Kestrel/1.0.0-beta5": {
+        "dependencies": {
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Server.Kestrel.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Server.Kestrel.dll": {}
+        }
+      },
       "Microsoft.AspNet.Server.WebListener/1.0.0-beta5": {
         "dependencies": {
           "Microsoft.AspNet.Http.Features": "1.0.0-beta5",
@@ -1065,6 +1100,19 @@
       }
     },
     "DNXCore,Version=v5.0": {
+      "Kestrel/1.0.0-beta5": {
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-beta5",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-beta5",
+          "System.Runtime": "4.0.20-beta-23019"
+        },
+        "compile": {
+          "lib/dnxcore50/Kestrel.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Kestrel.dll": {}
+        }
+      },
       "Microsoft.AspNet.Authentication/1.0.0-beta5": {
         "dependencies": {
           "Microsoft.AspNet.DataProtection": "1.0.0-beta5",
@@ -1588,6 +1636,32 @@
         "dependencies": {
           "Microsoft.AspNet.Loader.IIS.Interop": "1.0.0-beta5",
           "Microsoft.AspNet.Loader.IIS": "1.0.0-beta5"
+        }
+      },
+      "Microsoft.AspNet.Server.Kestrel/1.0.0-beta5": {
+        "dependencies": {
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+          "System.Collections": "4.0.10-beta-23019",
+          "System.Diagnostics.Debug": "4.0.10-beta-23019",
+          "System.Diagnostics.TraceSource": "4.0.0-beta-23019",
+          "System.Diagnostics.Tracing": "4.0.20-beta-23019",
+          "System.Globalization": "4.0.10-beta-23019",
+          "System.IO": "4.0.10-beta-23019",
+          "System.Linq": "4.0.0-beta-23019",
+          "System.Net.Primitives": "4.0.10-beta-23019",
+          "System.Runtime.Extensions": "4.0.10-beta-23019",
+          "System.Runtime.InteropServices": "4.0.20-beta-23019",
+          "System.Text.Encoding": "4.0.10-beta-23019",
+          "System.Threading": "4.0.10-beta-23019",
+          "System.Threading.Tasks": "4.0.10-beta-23019",
+          "System.Threading.Thread": "4.0.0-beta-23019",
+          "System.Threading.ThreadPool": "4.0.10-beta-23019"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.AspNet.Server.Kestrel.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.AspNet.Server.Kestrel.dll": {}
         }
       },
       "Microsoft.AspNet.Server.WebListener/1.0.0-beta5": {
@@ -3119,6 +3193,19 @@
     }
   },
   "libraries": {
+    "Kestrel/1.0.0-beta5": {
+      "serviceable": true,
+      "sha512": "rFC89oqyntN0Z/ACBjYKaogIom3eW6YI8fFFw9ou2KWSSpDY1PCua4D/PDx4N2oYBhgFjBX4GyJmRZ/1L3n9Pw==",
+      "files": [
+        "Kestrel.1.0.0-beta5.nupkg",
+        "Kestrel.1.0.0-beta5.nupkg.sha512",
+        "Kestrel.nuspec",
+        "lib/dnx451/Kestrel.dll",
+        "lib/dnx451/Kestrel.xml",
+        "lib/dnxcore50/Kestrel.dll",
+        "lib/dnxcore50/Kestrel.xml"
+      ]
+    },
     "Microsoft.AspNet.Authentication/1.0.0-beta5": {
       "serviceable": true,
       "sha512": "0aGfwSmbVHhNIQSp6dXqz6sLYD07U9Dgnw8rm/wnQDkLFfJ9iPQKBBTk/Oh/6wGwaSg9Ko7mzXTwILE42HZdZA==",
@@ -3541,6 +3628,22 @@
         "Microsoft.AspNet.Server.IIS.1.0.0-beta5.nupkg",
         "Microsoft.AspNet.Server.IIS.1.0.0-beta5.nupkg.sha512",
         "Microsoft.AspNet.Server.IIS.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Server.Kestrel/1.0.0-beta5": {
+      "serviceable": true,
+      "sha512": "JDebwt15z3QyFAQEqEiYNDUu9mDymOTfFip5KC4+0ou5YHi6AGlcT5mxQD+YuIkcI9/0Ck9mFWOL0tKEgwjCSQ==",
+      "files": [
+        "Microsoft.AspNet.Server.Kestrel.1.0.0-beta5.nupkg",
+        "Microsoft.AspNet.Server.Kestrel.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.AspNet.Server.Kestrel.nuspec",
+        "lib/dnx451/Microsoft.AspNet.Server.Kestrel.dll",
+        "lib/dnx451/Microsoft.AspNet.Server.Kestrel.xml",
+        "lib/dnxcore50/Microsoft.AspNet.Server.Kestrel.dll",
+        "lib/dnxcore50/Microsoft.AspNet.Server.Kestrel.xml",
+        "native/darwin/universal/libuv.dylib",
+        "native/windows/amd64/libuv.dll",
+        "native/windows/x86/libuv.dll"
       ]
     },
     "Microsoft.AspNet.Server.WebListener/1.0.0-beta5": {
@@ -5235,6 +5338,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Kestrel >= 1.0.0-beta5",
       "Microsoft.AspNet.Server.IIS >= 1.0.0-beta5",
       "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta5",
       "Microsoft.AspNet.Mvc >= 6.0.0-beta5",
